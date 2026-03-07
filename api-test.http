@@ -1,0 +1,30 @@
+
+### Задачи
+GET http://localhost:38109/zp/tasks
+
+### Настройки задачи
+GET http://localhost:38109/zp/settings-xml?task_id=92ca9a3d-a8dc-4690-9ecc-2e34265f8c76
+
+
+### Команды pending
+GET http://localhost:10993/zp/commands?status=pending
+
+### Создать команду
+POST http://localhost:10993/zp/commands
+Content-Type: application/json
+
+{
+  "task_id": "123",
+  "action": "start",
+  "payload": ""
+}
+
+### PM Bridge — пометить выполненной
+POST http://localhost:10993/zp/commands/done
+Content-Type: application/json
+
+{
+  "id": "uuid-сюда",
+  "result": "ok",
+  "status": "done"
+}
