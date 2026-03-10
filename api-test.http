@@ -1,6 +1,8 @@
 
 ### Задачи
-GET http://localhost:38109/zp/tasks
+GET http://localhost:38109/http-logs?limit=50
+
+
 
 ### Настройки задачи
 GET http://localhost:38109/zp/settings-xml?task_id=92ca9a3d-a8dc-4690-9ecc-2e34265f8c76
